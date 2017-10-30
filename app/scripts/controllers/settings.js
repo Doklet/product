@@ -53,3 +53,5 @@ angular.module('productApp')
       };
       SettingsService.setValue('productModel', value);
     }
+
+  });

@@ -32,7 +32,7 @@ angular.module('productApp')
             $scope.error = 'Failed to start application';
           }
         );
-    }
+    };
 
     $scope.stop = function() {
 
@@ -48,6 +48,6 @@ angular.module('productApp')
             $scope.error = 'Failed to stop application';
           }
         );
-    }
+    };
 
   });
