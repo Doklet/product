@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('qualityApp')
+angular.module('productApp')
   .service('Authinterceptor', function() {
 
     return {
