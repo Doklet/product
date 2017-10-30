@@ -1,0 +1,21 @@
+<div class="container">
+  <navigation></navigation>
+  <div class="jumbotron">
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Dataset</label>
+        <div class="col-sm-10">
+          <select class="form-control" ng-change="datasetChanged()" ng-model="settings.dataset" ng-options="dataset as dataset.name for dataset in datasets track by dataset.id"></select>
+          <small class="pull-left">The dataset is used to store the images when recording</small>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputPassword3" class="col-sm-2 control-label">Product Model</label>
+        <div class="col-sm-10">
+          <select class="form-control" ng-change="productModelChanged()" ng-model="settings.productModel" ng-options="model as model.name for model in models track by model.id"></select>
+          <small class="pull-left">The model used to detect the type of product</small>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

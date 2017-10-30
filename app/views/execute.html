@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="alert alert-danger" ng-show="error!=undefined">
+    <button type="button" class="close" ng-click="error=undefined"><span>&times;</span>
+    </button>
+    {{error}}
+  </div>
+  <navigation></navigation>
+  <div class="jumbotron">
+    <div ng-show='isRunning == false'>
+      <h2>The application is currently not running</h2>
+      <p>Press the button below to start the application</p>
+      <button class="btn btn-lg btn-success" ng-click="start()">Start</button>
+    </div>
+    <div ng-show='isRunning == true'>
+      <h2>The application is currently running</h2>
+      <p>Press the button below to stop the application</p>
+      <button class="btn btn-lg btn-danger" ng-click="stop()">Stop</button>
+    </div>
+  </div>
+</div>
