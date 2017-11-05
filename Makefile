@@ -44,7 +44,7 @@ deploy: build distro
 	# Copy the distro to production
 	scp distro/$(name).zip $(user)@$(node):/var/lib/skyraid/packages/$(name).zip
 
-tx1deploy: distro
+tx1deploy: build distro
 	# Ensure the distro exist
 	ls distro/$(name).zip
 	scp distro/$(name).zip ubuntu@$(local-tx1-host):~
